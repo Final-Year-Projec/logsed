@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:logsed/services/auth.dart';
 
 class Home extends StatelessWidget {
 
   final AuthService _auth =AuthService();
+  final GoogleSignIn googleSignIn = GoogleSignIn();
 
   Widget build(BuildContext context) {
     return Scaffold(
